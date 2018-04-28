@@ -1,0 +1,54 @@
+.containerphoto {
+    position: relative;
+    width: 100%;
+
+}
+
+.containerphoto  img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .9s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background: #451733;
+  width: 100%;
+  height: 100%;
+}
+
+.containerphoto:hover {
+	cursor: pointer;
+}
+.containerphoto:hover >  img {
+  opacity: 0.5;
+}
+
+.containerphoto:hover > .middle {
+  opacity: 0.8;
+}
+
+
+.views{
+	background: none;
+	width: 70%;
+	height: 20%;
+	border: 10px solid #eca69c;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	border-radius: 30px;
+  	opacity: 1;
+}
